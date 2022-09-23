@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+// import Button from './components/Button/Button' Esto lo dejé de la clase
+import Navbar from './components/Navbar/Navbar'
+import ItemListContainer from './components/ItemListContanier/ItemListContainer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      {/* Esto lo dejé de la clase! Pero no lo voy a usar por ahora */}
+          {/* <Button label={'CANCELAR'} background='red' color='black' />
+           <Button label={'ACEPTAR'} background='green' color='white' /> */ } 
+
+
+ <Navbar></Navbar>
+ <ItemListContainer greeting={'Gracias por elegirnos'}/>
+
+   
     </div>
   );
 }
